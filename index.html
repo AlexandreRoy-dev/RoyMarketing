@@ -1,0 +1,713 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/ico/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/ico/favicon-16x16.png">
+    <link rel="manifest" href="assets/ico/site.webmanifest">
+    <link rel="mask-icon" href="assets/ico/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="assets/ico/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="assets/ico/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="assets/libs/flickity/dist/flickity.min.css">
+    <link rel="stylesheet" href="assets/libs/flickity-fade/flickity-fade.css">
+    <link rel="stylesheet" href="assets/libs/fullpage.js/dist/fullpage.min.css">
+    <link rel="stylesheet" href="assets/libs/highlightjs/styles/codepen-embed.css">
+    <link rel="stylesheet" href="assets/libs/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="assets/libs/incline-icons/style.min.css">
+
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="assets/css/theme.min.css">
+
+    <style>
+
+      .navbar {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+.section.section-top {
+  min-height: 100vh;         /* full screen height */
+  display: flex;             /* enables vertical centering */
+  align-items: center;       /* center content vertically */
+  justify-content: center;   /* center content horizontally */
+  position: relative;        /* for overlay/video positioning */
+}
+.bg-video,
+.bg-video-media {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;         /* ensures video covers without distortion */
+  z-index: -1;               /* keep behind content */
+}
+
+
+#services .icon-2x {
+  font-size: 3rem; /* make icons larger */
+}
+
+
+/* Apply side margins to all sections except hero */
+/* Par défaut : petit padding sur mobile */
+section:not(#hero) .container-fluid {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/* À partir de lg (≥992px), appliquer 8rem */
+@media (min-width: 992px) {
+  section:not(#hero) .container-fluid {
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+}
+
+
+
+
+    </style>
+
+    <title>Roy Marketing</title>
+  </head>
+  <body>
+
+    <!-- NAVBAR
+    ================================================= -->
+     <nav class="navbar navbar-expand-xl navbar-dark  navbar-togglable  fixed-top">
+      <div class="container">
+
+        <!-- Brand -->
+        <a class="navbar-brand" href="index.html">
+      <img src="./assets/img/logo.png" alt="Logo" height="70">
+
+    </a>
+  
+        <!-- Toggler -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <!-- Collapse -->
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+
+          <!-- Social -->
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item-divider">
+              <span class="nav-link">
+                <span></span>
+              </span>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="fab fa-github"></i> 
+                <span class="d-xl-none ml-2">
+                  Github
+                </span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="fab fa-twitter"></i> 
+                <span class="d-xl-none ml-2">
+                  Twitter
+                </span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="fab fa-instagram"></i> 
+                <span class="d-xl-none ml-2">
+                  Instagram
+                </span>
+              </a>
+            </li>
+          </ul>
+
+          <!-- Links -->
+          <ul class="navbar-nav ml-auto">
+            
+            <li class="nav-item">
+              <a href="https://themes.getbootstrap.com/product/incline-landing-page-set/" target="_blank" class="nav-link">
+                Nous contacter
+              </a>
+            </li>
+          </ul>
+
+        </div> <!-- / .navbar-collapse -->
+  
+      </div> <!-- / .container -->    
+    </nav>
+
+    <!-- HERO
+    ================================================== -->
+       <section id="hero">
+        <div class="section section-top">
+
+          <!-- Cover -->
+          <div class="bg-video">
+       <video class="bg-video-media" autoplay playsinline muted loop>
+  <source src="assets/video/red smoke.mp4" type="video/mp4">
+  HTML video is not supported by your browser.
+</video>
+
+      </div>
+
+          <!-- Overlay -->
+          <div class="bg-overlay"></div>
+
+          <!-- Triangles -->
+          <div class="bg-triangle bg-triangle-light bg-triangle-bottom bg-triangle-left"></div>
+          <div class="bg-triangle bg-triangle-light bg-triangle-bottom bg-triangle-right"></div>
+
+          <!-- Content -->
+          <div class="container">
+            <div class="row justify-content-center align-items-center">
+              <div class="col-md-8 col-lg-7">
+
+                <!-- Preheading -->
+                <p class="font-weight-medium text-center text-xs text-uppercase text-white text-muted" data-toggle="animation" data-animation="fadeUp" data-animation-order="0" data-animation-trigger="load">
+                  ROY MARKETING
+                </p>
+                
+                <!-- Heading -->
+                <h1 class="text-white text-center mb-4 fs-1" data-toggle="animation" data-animation="fadeUp" data-animation-order="1" data-animation-trigger="load" style="font-size: 3rem;">
+                  VOTRE <span class="text-primary ">PARTENAIRE</span> NUMÉRIQUE
+                </h1>
+
+                <!-- Subheading -->
+                <p class="lead text-white text-muted text-center mb-5" data-toggle="animation" data-animation="fadeUp" data-animation-order="2" data-animation-trigger="load">
+                  Mesurer - Analyser - Améliorer                </p>
+
+                <!-- Button -->
+                <p class="text-center mb-0" data-toggle="animation" data-animation="fadeUp" data-animation-order="3" data-animation-trigger="load">
+                  <a href="#about-1" class="btn btn-primary  text-white rounded-pill ">
+                    Voir nos services
+                  </a>
+                </p>
+
+              </div>
+            </div> <!-- / .row -->
+          </div> <!-- / .container -->
+        
+        </div>
+      </section>
+ 
+<section class="section" id="services">
+
+      <!-- Content -->
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <div class="col-12 col-md-6 col-lg-5">
+            
+            <!-- Image -->
+            <div class="img-effect img-effect-dotted mb-5 mb-md-0">
+              <img src="assets/img/Acueil/services.png" class="img-fluid" alt="...">
+            </div>
+
+          </div>
+          <div class="col-12 col-md-6 offset-lg-1">
+            
+            <!-- Preheading -->
+            <p class="mb-2 font-weight-medium text-uppercase text-xs text-muted">
+              Nos services
+            </p>
+
+            <!-- Heading -->
+            <h2 class="mb-4 text-primary">
+              Comment est-ce qu'on peut vous aider ?
+            </h2>
+
+            <!-- Subheading -->
+            <p class="mb-5 text-muted">
+              Des solutions créatives et efficaces pour développer votre visibilité et attirer plus de clients.
+            </p>
+
+            <div class="row">
+              <div class="col-12 col-lg-6">
+                
+                <!-- Item -->
+                <div class="mb-5">
+                  
+                  <!-- Icon -->
+                  <div class="text-primary mb-4">
+                    <span class="icon icon-edit icon-2x"></span>
+                  </div>
+
+                  <!-- Heading -->
+                  <h4 class="mb-3">
+                    Design &amp; développement web
+                  </h4>
+
+                  <!-- Content -->
+                  <p class="text-muted mb-0">
+                    Des sites modernes, rapides et pensés pour performer.
+                  </p>
+
+                </div>
+
+              </div>
+              <div class="col-12 col-lg-6">
+                
+                <!-- Item -->
+                <div class="mb-5">
+                  
+                  <!-- Icon -->
+                  <div class="text-primary mb-4">
+                    <span class="icon icon-puzzle icon-2x"></span>
+                  </div>
+
+                  <!-- Heading -->
+                  <h4 class="mb-3">
+                    Gestion des réseaux sociaux
+                  </h4>
+
+                  <!-- Content -->
+                  <p class="text-muted mb-0">
+                   Du contenu engageant pour une communauté active.
+                  </p>
+
+                </div>
+
+              </div>
+            </div> <!-- / .row -->
+
+            <div class="row">
+              <div class="col-12 col-lg-6">
+                
+                <!-- Item -->
+                <div class="mb-5 mb-lg-0">
+                  
+                  <!-- Icon -->
+                  <div class="text-primary mb-4">
+                    <span class="icon icon-at icon-2x"></span>
+                  </div>
+
+                  <!-- Heading -->
+                  <h4 class="mb-3">
+                   Marketing digital
+                  </h4>
+
+                  <!-- Content -->
+                  <p class="text-muted mb-0">
+                   Des campagnes ciblées qui apportent des nouveaux clients.
+                  </p>
+
+                </div>
+
+              </div>
+              <div class="col-12 col-lg-6">
+                
+                <!-- Item -->
+                <div class="mb-0">
+                  
+                  <!-- Icon -->
+                  <div class="text-primary mb-4">
+                    <span class="icon icon-diamond icon-2x"></span>
+                  </div>
+
+                  <!-- Heading -->
+                  <h4 class="mb-3">
+                    Image de marque
+                  </h4>
+
+                  <!-- Content -->
+                  <p class="text-muted mb-0">
+                    Une identité forte qui distingue votre entreprise.
+                  </p>
+
+                </div>
+
+              </div>
+            </div> <!-- / .row -->
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+
+    </section>
+
+    <!-- Réalisations
+    ================================================== -->
+
+                  
+    <!-- Prix
+    ================================================== -->
+<section class="section" id="Prix">
+  <style>
+    /* Badge */
+    .pricing-badge {
+      position: absolute;
+      top: -14px;
+      left: 50%;
+      transform: translateX(-50%);
+      padding: .4rem .9rem;
+      font-size: .8rem;
+      font-weight: 600;
+      border-radius: 30px;
+      background: var(--bs-primary, #6f0000);
+      color: #fff;
+      box-shadow: 0 4px 10px rgba(0,0,0,.15);
+      text-transform: uppercase;
+      letter-spacing: .5px;
+    }
+
+    /* Active card accent */
+    .card-active {
+      border: 1px solid rgba(13,110,253,.25);
+      box-shadow: 0 1.25rem 2rem rgba(13,110,253,.15), 0 .5rem 1rem rgba(0,0,0,.05);
+      transform: translateY(-2px);
+    }
+
+    /* List style with bullets */
+    .card-text.list-iconed {
+      list-style-type: disc;
+      padding-left: 1.5rem; /* décale les puces */
+    }
+
+    .card-text.list-iconed li {
+      margin-bottom: .5rem;
+    }
+  </style>
+
+  <div class="container-fluid">
+    <div class="row mb-5">
+      <div class="col-md-2">
+        <!-- Title -->
+        <h6 class="title text-uppercase text-muted">
+          Nos promotions
+        </h6>
+      </div>
+      <div class="col-md-10">
+        <!-- Heading -->
+        <h3 class="mb-4">
+          Nos <span class="text-primary">promotions</span> pour travailleurs autonomes
+        </h3>
+        <!-- Subheading -->
+        <p class="text-muted mb-0">
+          Que vous soyez en démarrage ou déjà bien établi, nos solutions sont pensées pour vous aider à bâtir votre présence en ligne, développer votre image et maximiser vos résultats.
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <!-- Carte 1 : Pack réseaux sociaux (150 $) -->
+      <div class="col-lg-4 mb-4 mb-lg-0">
+        <div class="card card-lg h-100 shadow">
+          <div class="card-body text-center d-flex flex-column">
+            <h4 class="card-title">Pack réseaux sociaux</h4>
+            <h3 class="card-title font-weight-normal mb-4">
+              <del class="text-muted me-2">299 $</del>
+              <span class="text-primary fw-semibold">150 $</span>
+            </h3>
+            <ul class="card-text list-iconed text-muted mb-4">
+              <li>Configuration de vos pages de réseaux sociaux</li>
+              <li>Optimisation des profils</li>
+              <li>Ajout des informations</li>
+              <li>Intégration des boutons d’action</li>
+              <li>Mise en place des accès professionnels</li>
+            </ul>
+            <div class="mt-auto">
+              <a href="#!" class="btn btn-primary rounded-pill">Booster ma visibilité</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carte 2 : Page professionnelle (299 $) -->
+      <div class="col-lg-4 mb-4 mb-lg-0">
+        <div class="card card-lg h-100 shadow">
+          <span class="pricing-badge">Populaire</span>
+          <div class="card-body text-center d-flex flex-column">
+            <h4 class="card-title">Page professionnelle</h4>
+            <h3 class="card-title font-weight-normal mb-4">
+              <del class="text-muted me-2">599 $</del>
+              <span class="text-primary fw-semibold">299 $</span>
+            </h3>
+            <ul class="card-text list-iconed text-muted mb-4">
+              <li>Création d’une page web professionnelle</li>
+              <li>5 sections incluses dans la page</li>
+              <li>SEO de base</li>
+              <li>Formulaire de contact personnalisé</li>
+              <li>1 mois de suivi et conseils personnalisés</li>
+            </ul>
+            <div class="mt-auto">
+              <a href="#!" class="btn btn-primary rounded-pill">Démarrer maintenant</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carte 3 : Identité visuelle (699 $) -->
+      <div class="col-lg-4">
+        <div class="card card-lg card-active h-100 shadow position-relative">
+          <div class="card-body text-center d-flex flex-column">
+            <h4 class="card-title">Identité visuelle</h4>
+            <h3 class="card-title font-weight-normal mb-4">
+              <del class="text-muted me-2">999 $</del>
+              <span class="text-primary fw-semibold">699 $</span>
+            </h3>
+            <ul class="card-text list-iconed text-muted mb-4">
+              <li>Création de logo (3 propositions + déclinaisons)</li>
+              <li>Palette de couleurs personnalisée</li>
+              <li>Guide de style visuel complet</li>
+              <li>Modèles de cartes d’affaires et signatures courriel</li>
+              <li>Gabarits médias sociaux ou PowerPoint</li>
+            </ul>
+            <div class="mt-auto">
+              <a href="#!" class="btn btn-primary rounded-pill">Créer mon image</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- /row -->
+  </div><!-- /container -->
+</section>
+
+      
+
+
+
+
+    <!-- FEATURES
+    ================================================== -->
+    <section class="section " style="background-color: #6f0000;" id="avantages">
+
+      <!-- Triangles -->
+      <div class="bg-triangle bg-triangle-light bg-triangle-top bg-triangle-left"></div>
+      <div class="bg-triangle bg-triangle-light bg-triangle-bottom bg-triangle-right"></div>
+
+      <!-- Content -->
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-lg-6">
+        
+            <!-- Heading -->
+            <h2 class="text-white text-center mb-4">
+              Pourquoi nous choisir ?
+            </h2>
+
+            <!-- Subheading -->
+            <p class="text-white text-muted text-center mb-5">
+              Parce que votre succès est le nôtre, nos services reposent sur trois principes clés :
+            </p>
+
+          </div>
+        </div> <!-- / .row -->
+        <div class="row">
+          <div class="col-md-4">
+
+            <!-- Item -->
+            <div class="text-center mb-5 mb-md-0">
+          
+              <!-- Icon -->
+              <div class="text-white mb-4">
+                <span class="icon-devices icon-2x"></span>
+              </div>
+
+              <!-- Heading -->
+              <h4 class="text-white mb-3">
+                On veut que ça soit simple.
+              </h4>
+
+              <!-- Content -->
+              <p class="text-white text-muted mb-0">
+                Des solutions marketing claires. Nous transformons la complexité du numérique en actions concrètes, faciles à comprendre et à mettre en place.
+              </p>
+
+            </div>
+
+          </div>
+          <div class="col-md-4">
+
+            <!-- Item -->
+            <div class="text-center mb-5 mb-md-0">
+          
+              <!-- Icon -->
+              <div class="text-white mb-4">
+                <span class="icon-shield icon-2x"></span>
+              </div>
+
+              <!-- Heading -->
+              <h4 class="text-white mb-3">
+                Pas de gaspillage.
+              </h4>
+
+              <!-- Content -->
+              <p class="text-white text-muted mb-0">
+                Chaque stratégie est pensée pour générer un maximum d’impact avec les ressources investies. Pas de blabla, que des actions qui comptent.
+              </p>
+
+            </div>
+
+          </div>
+          <div class="col-md-4">
+
+            <!-- Item -->
+            <div class="text-center">
+          
+              <!-- Icon -->
+              <div class="text-white mb-4">
+                <span class="icon icon-support icon-2x"></span>
+              </div>
+
+              <!-- Heading -->
+              <h4 class="text-white mb-3">
+                On livre des résultats.
+              </h4>
+
+              <!-- Content -->
+              <p class="text-white text-muted mb-0">
+                Nous mesurons, analysons et optimisons en continu pour garantir un retour sur investissement réel et durable. Votre succès est notre objectif.
+
+
+              </p>
+
+            </div>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+
+    </section>
+
+
+
+  
+
+    <!-- FOOTER
+    ================================================== -->
+    <footer class="section " style="background-color: #222222;">
+
+      <!-- Triangles -->
+      <div class="bg-triangle bg-triangle-light bg-triangle-bottom bg-triangle-left"></div>
+      <div class="bg-triangle bg-triangle-light bg-triangle-bottom bg-triangle-right"></div>
+
+      <!--Content -->
+      <div class="container">
+        <div class="row align-self-center">
+          <div class="col-md-auto">
+
+            <!-- Brand -->
+            <p>
+                  <a class="navbar-brand" href="index.html">
+      <img src="./assets/img/logo.png" alt="Logo" height="70">
+
+    </a>
+            </p>
+        
+          </div>
+          <div class="col-md">
+        
+            <!-- Links -->
+       
+
+
+          </div>
+        </div> <!-- / .row -->
+        <div class="row align-items-center">
+          <div class="col-md">
+        <div class="row align-items-center">
+          <div class="col-md">
+        
+            <!-- Copyright -->
+           
+
+          
+
+            
+
+            <p class="text-white text-muted mb-4 mb-md-0">
+
+              </p><p class="text-white">  Du lundi au vendredi: 9h-17h <br> <br> <a href="mailto:info@roymarketing.ca">Info@roymarketing.ca</a> <br> <br> Bureau: <a href="tel:+18199937108">(819) 993-7108</a> </p>
+              
+          
+
+          </div>
+
+          
+          <div class="col-md">
+        
+            <!-- Social links -->
+            <ul class="list-inline list-unstyled text-md-right">
+              
+              <li class="list-inline-item ml-3">
+                <a href="https://www.facebook.com/profile.php?id=61571402560608">
+                  <i class="fab fa-facebook"></i>
+                </a>
+              </li>
+              <li class="list-inline-item ml-3">
+                <a href="https://www.instagram.com/axr_construction/">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+            <!-- Copyright -->
+            <p class="text-white text-muted">
+              <small>
+                &copy; Copyright <span class="current-year"></span> Roy Marketing.
+              </small>
+            </p>
+
+          </div>
+          <div class="col-md">
+        
+            <!-- Social links -->
+            <ul class="list-inline list-unstyled text-md-right">
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fab fa-github"></i>
+                </a>
+              </li>
+              <li class="list-inline-item ml-3">
+                <a href="#">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li class="list-inline-item ml-3">
+                <a href="#">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+            </ul>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+
+    </footer>
+
+    <!-- JAVASCRIPT
+    ================================================== -->
+    <!-- Global JS -->
+    <script src="assets/libs/jquery/dist/jquery.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCnKt8_N4-FKOnhI_pSaDL7g_g-XI1-R9E"></script>
+
+    <!-- Plugins JS -->
+    <script src="assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/libs/flickity/dist/flickity.pkgd.min.js"></script>
+    <script src="assets/libs/flickity-fade/flickity-fade.js"></script>
+    <script src="assets/libs/jquery-parallax.js/parallax.min.js"></script>
+    <script src="assets/libs/waypoints/lib/jquery.waypoints.min.js"></script>
+    <script src="assets/libs/waypoints/lib/shortcuts/inview.min.js"></script>
+    <script src="assets/libs/fullpage.js/vendors/scrolloverflow.min.js"></script>
+    <script src="assets/libs/fullpage.js/dist/fullpage.min.js"></script>
+    <script src="assets/libs/highlightjs/highlight.pack.min.js"></script>
+
+    <!-- Theme JS -->
+    <script src="assets/js/theme.min.js"></script>
+
+  </body>
+</html>

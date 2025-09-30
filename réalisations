@@ -1,0 +1,116 @@
+ <section class="section bg-light" id="realisations">
+
+      <!-- Line -->
+      <div class="line line-top"></div>
+
+   
+      
+
+      <!-- Content -->
+      <div class="container-fluid">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-lg-6">
+            <p class="mb-2 font-weight-medium text-uppercase text-xs text-muted text-center">
+              Réalisations
+            </p>
+            <!-- Heading -->
+            <h2 class="text-center mb-4 text-primary">
+              Besoin d'idées ?
+            </h2>
+
+            <!-- Subheading -->
+            <p class="text-muted text-center mb-5">
+              
+            </p>
+
+          </div>
+        </div> <!-- / .row -->
+        <div class="row">
+          <div class="col-md-4">
+        
+            <!-- Item -->
+            <a href="index-header-carousel.html" class="card border-0 mb-3 mb-md-0">
+          
+              <!-- Image -->
+              <div class="card-img-top">
+                <img src="assets/img/51.png" alt="Carousel header" class="img-fluid">
+              </div>
+
+              <!-- Body -->
+              <div class="card-body">
+            
+                <!-- Title -->
+                <h4 class="card-title">
+                  Page professionnelle 
+                </h4>
+
+                <!-- Body -->
+                <p class="card-text text-muted">
+                  Créez une page axé sur le service que vous offrez.
+                </p>
+
+              </div>
+
+            </a> <!-- / .card -->
+
+          </div>
+          <div class="col-md-4">
+        
+            <!-- Item -->
+            <a href="index-header-parallax.html" class="card border-0 mb-3">
+          
+              <!-- Image -->
+              <div class="card-img-top">
+                <img src="assets/img/52.png" alt="Parallax header" class="img-fluid">
+              </div>
+
+              <!-- Body -->
+              <div class="card-body">
+            
+                <!-- Title -->
+                <h4 class="card-title">
+                 Entreprise de service
+                </h4>
+
+                <!-- Body -->
+                <p class="card-text text-muted">
+                  Good old parallax effect to add even more visual interest to your page.
+                </p>
+
+              </div>
+
+            </a> <!-- / .card -->
+
+          </div>
+          <div class="col-md-4">
+        
+            <!-- Item -->
+            <a href="index-header-video.html" class="card border-0 mb-3 mb-md-0">
+          
+              <!-- Image -->
+              <div class="card-img-top">
+                <img src="assets/img/53.png" alt="Video header" class="img-fluid">
+              </div>
+
+              <!-- Body -->
+              <div class="card-body">
+            
+                <!-- Title -->
+                <h4 class="card-title">
+                  Clinique et santé
+                </h4>
+
+                <!-- Body -->
+                <p class="card-text text-muted">
+                  Local video background you can optionally loop if needed.
+                </p>
+
+              </div>
+
+            </a> <!-- / .card -->
+
+          </div>
+        </div> <!-- / .row -->
+        
+
+    </section>
