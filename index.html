@@ -72,8 +72,16 @@ section:not(#hero) .container-fluid {
   }
 }
 
+/* Default: mobile stays normal */
 html {
-  font-size: 125%; /* 1.25x compared to the base (usually 16px) */
+  font-size: 100%;
+}
+
+/* Bigger text on tablets and desktops */
+@media (min-width: 768px) {
+  html {
+    font-size: 125%; /* 1.25x */
+  }
 }
 
 
